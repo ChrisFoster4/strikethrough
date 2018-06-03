@@ -1,0 +1,9 @@
+SYS_EXIT equ 60
+SYS_IN equ 0
+SYS_OUT equ 1
+STDIN equ 0
+STDOUT equ 1
+END_LINE_CHAR equ 10
+USER_STRING_LENGTH equ 16 ;<- this is the max length of the user entered string.
+
+
