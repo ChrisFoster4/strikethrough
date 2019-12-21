@@ -1,14 +1,21 @@
-The equivalent of https://saijogeorge.com/strikethrough-text-generator/ written in x86-64 NASM<br/>
+The equivalent of https://saijogeorge.com/strikethrough-text-generator/ written in x86-64 NASM  
 
-Requires a 64 bit x86-64 CPU and a Linux based OS<br/> 
+Requires a 64 bit x86-64 CPU and a Linux based OS   
 
-To build:  
+Dependencies:  
+nasm, GNU ld and GNU make  
+Install on Debian based systems with:  
 ```
-nasm -f elf64 main.asm && ld main.o -o strikethrough
+sudo apt update && sudo apt install -y nasm binutils make
 ```
-<br/>
-To run:<br/>
+
+To build run:  
+```
+make build
+```
+  
+To run:  
 ```
 ./strikethough
 ```
-
+Then type your string and press enter
